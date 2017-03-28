@@ -1,0 +1,228 @@
+<html>
+  <head>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:600,700,800" rel="stylesheet">
+    <link 
+      rel="stylesheet" 
+      href="prism-atom-dark.css" 
+      type="text/css" 
+      media="screen" 
+    />
+
+    <script type="text/javascript" src="prism.js"></script>
+    <script type="text/javascript" src="prism.ruby.js"></script>
+
+    <title>John A. Dole IV</title>
+    <meta name="description" content="John A. Dole IV is a programming 
+          apprentice with special focus on Ruby, Rails, JavaScript, Algorithms, and building web applications.">
+  </head>
+
+  <body>
+    <div class="about-container">
+      <ul>
+          <li><a href="#" class="nav-link">About</a></li>
+        <li><a href="#code-samples" class="nav-link">Code Samples</a></li>
+        <li><a href="#web-apps" class="nav-link">Web Apps</a></li>
+        <li><a href="#skills-and-tools" class="nav-link">Skills &amp; Tools</a></li>
+        <li class="hire-me"><a href="#hire-me" class="nav-link">HIRE ME</a></li>
+      </ul>
+
+      <div class="about">
+        <img src="me.jpg" class="me"/>
+
+        <h1>John A. Dole IV</h1>
+
+        <h2>PROGRAMMING APPRENTICE</h2>
+        <hr class="grey" />
+        <p class="bio">
+          John Dole has been a commodities trader for over 10 years.  Having learned a bit of R programming, he is interested in developing the skill set of programming and web design.  
+        </p>
+      </div>
+    </div>
+
+    <h3 id="code-samples">Code Snippets</h3>
+
+    <hr class="yellow">
+
+    <div class="box">
+      <h4>Temperature Conversion</h4>
+        <p>
+            This ruby program will prompt the user for a temperature 
+            in degrees Celsius and let the user know what the 
+            corresponding temperature is in Fahrenheit.
+        </p>
+    </div>
+
+    <div class="box">
+<pre><code class="language-ruby">puts &quot;Enter Degrees in Celcius:&quot;
+deg_celcius = gets.to_i
+
+convert = deg_celcius * 1.8 + 32
+
+puts &quot;The temperature is #{convert} degrees Fahrenheit&quot;</code></pre>
+    </div>
+
+    </div>
+
+    <br class="clear" />
+
+    <div class="box">
+<pre><code class="language-ruby">puts &quot;Enter a number:&quot;
+user_number = gets.to_i
+
+moduloed_ten = user_number % 10
+moduloed_hundred = user_number % 100
+
+if moduloed_ten == 1 &amp;&amp; moduloed_hundred != 11
+  puts &quot;That's the #{user_number}st item!&quot;
+elsif moduloed_ten == 2 &amp;&amp; moduloed_hundred != 12
+  puts &quot;That's the #{user_number}nd item!&quot;
+elsif moduloed_ten == 3 &amp;&amp; moduloed_hundred != 13
+  puts &quot;That's the #{user_number}rd item!&quot;
+else
+  puts &quot;That's the #{user_number}th item!&quot;
+end</code></pre>
+
+
+    </div>
+
+    <div class="box">
+      <h4>Ordinal Challenge</h4>
+      <p>
+        This ruby program will convert a plain number
+        to the ordinal of the number. So for example,
+        if the user enters 2, it will display 2nd, if
+        the user enters 3, it will display 3rd, etc.
+      </p>
+    </div>
+
+    <br class="clear" />
+    <div class="box">
+      <h4>Foobar</h4>
+      <p>
+        This ruby program is an adaptation of a classic technical 
+        interview problem which displays sequences 
+        of the Foobar pattern.
+      </p>
+    </div>
+
+    <div class="box">
+<pre><code class="language-ruby">puts &quot;How many digits of the pattern do you want to see?&quot;
+digits = gets.to_i
+  
+n = 0
+while n &lt; digits
+  n = n + 1
+    if n % 3 == 0 &amp;&amp; n % 5 == 0
+      puts &quot;foobar&quot;
+    elsif n % 3 == 0
+      puts &quot;foo&quot;
+    elsif n % 5 == 0
+      puts &quot;bar&quot;
+    else
+      puts n
+  end
+end</code></pre>
+    
+    </div>
+
+    <br class="clear" />
+
+    <h3 id="web-apps">Web Apps</h3>
+    <hr class="yellow" />
+    <div class="box">
+        <h4>Quote Generator</h4>
+        link_to image_tag("/code/Portfolio/splurty.png"), "https://splurty-john-dole.herokuapp.com/"
+            <p>
+              A database-powered quote generator with a mobile-first
+              design, using the Ruby on Rails framework, HTML, and CSS.
+              Uses Git and GitHub for version control, and launched
+              on Heroku.
+          </p>
+    </div>
+    <div class="box">
+        <h4>Yelp Clone</h4>
+        <img src="nomster.png" class="full-width" />
+        <p>
+          A Yelp clone that integrates with the Google Maps API 
+          and includes features like user comments, star ratings,
+          image uploading, and user authentication.
+        </p>
+      </div>
+      <br class="clear" />
+
+      <div class="box">
+        <h4>Two-Sided Market Place</h4>
+        <img src="flixter.png" class="full-width" />
+        <p>
+          A two-sided, video-streaming marketplace platform that
+          features credit card payment capabilities, user role
+          management, complex user interfaces, and advanced
+          database relationships.
+        </p>
+      </div>
+      <div class="box">
+        <h4>Test Driven Development</h4>
+        <img src="grammable.png" class="full-width" />
+        <p>
+          An Instagram clone that was built using industry-standard, test-driven
+          development following numerous red/green/refactor cycles.
+        </p>
+      </div>
+      <br class="clear" />
+      <div class="box">
+        <h4>Single Page Todo Application</h4>
+        <img src="todoster.png" class="full-width" />
+        <p>
+          This single-page to-do application features a
+          fluid user interface that– by using JavaScript–
+          allows users to rapidly add dynamic content.
+        </p>
+      </div>
+      <div class="box">
+        <h4>Agile Team Project</h4>
+        <img src="chess.png" class="full-width" />
+        <p>
+          Worked on an Agile software development team building
+          a chess application. Under the guidance of a senior software engineer,
+          we had weekly Agile team meetings for code reviews, sprint planning,
+          and feature assignments.
+        </p>
+      </div>
+      <br class="clear" />
+      <h3 id="skills-and-tools">Skills &amp; Tools</h3>
+      <hr class="yellow" />
+      <p class="skills-and-tools">
+        John is developing proficiency and expertise 
+        in the following programming languages and 
+        comfort with the following tools.
+      </p>
+      <div class="icons">
+          <img src="rubocop.png" class="icon" />
+          <img src="trello.png" class="icon" />
+          <img src="gg.png" class="icon" />
+          <img src="slack.png" class="icon" />
+          <img src="codeship.png" class="icon" />
+
+          <br class="clear" />
+          <img src="skills.png" class="icon"/>
+      </div>
+      
+      <div class="contact-me" id="hire-me">
+        <h3 class="contact-headline">Contact</h3>
+        <hr class="yellow" />
+          <p class="contact-info">
+            Currently entertaining new opportunities.
+            Please get in touch via email:
+          </p>
+          
+          <p>
+              <a href="mailto:jdoleiv@gmail.com" class="contact-link">
+                jdoleiv@gmail.com
+              </a>
+          </p>
+      </div>
+  </body>
+
+</html>
