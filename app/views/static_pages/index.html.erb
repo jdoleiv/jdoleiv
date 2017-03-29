@@ -1,6 +1,15 @@
 <html>
   <head>
       <link href="https://fonts.googleapis.com/css?family=Dosis:600,700,800" rel="stylesheet">
+      <link
+        rel="stylesheet"
+        href="prism-atom-dark.css"
+        type="text/css"
+        media="screen"
+      />
+
+      <script type="text/javascript" src="prism.js"></script>
+      <script type="text/javascript" src="prism.ruby.js"></script>
   </head>
 
   <div class="hero">
@@ -59,7 +68,7 @@
                 return @cache[n] if @cache[n]
                 key = n
                 output = []
-                output << n
+                output &lt;&lt; n
                 while n != 1 do
 
                   if n.even?
@@ -68,11 +77,11 @@
                     n = n * 3 + 1
                   end
                   if @cache[n]
-                      output << @cache[n]
+                      output &lt;&lt; @cache[n]
                       output.flatten!
                       break
                   end
-                  output << n
+                  output &lt;&lt; n
                 end
                 @cache[key] = output
                 output
@@ -85,7 +94,7 @@
                 key = 1
                 (1...n).each do |a|
                   seq_size = seq(a).size
-                  if longest < seq_size
+                  if longest &lt; seq_size
                     longest = seq_size
                     key = a
                   end
@@ -133,8 +142,8 @@
             require 'benchmark'
             num = 35
             Benchmark.bm do |x|
-              x.report("recursive_fib") { num.recursive_fib }
-              x.report("iterative_fib")  { iterative_fib(num)  }
+              x.report(&quot;recursive_fib&quot;) { num.recursive_fib }
+              x.report(&quot;iterative_fib&quot;)  { iterative_fib(num)  }
             end
           </code>
         </pre>
